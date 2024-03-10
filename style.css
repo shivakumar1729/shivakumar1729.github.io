@@ -1,0 +1,114 @@
+body {
+  /* display: flex; */
+  width: 100%;
+  /* justify-content: center; */
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.typewriter h1 {
+  color: #333333;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+}
+
+dt:nth-child(1) {
+  color: orange;
+}
+dd:nth-child(2) {
+  color: black;
+}
+
+#skills > h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#skills > div > h3:nth-child(1) {
+  color: burlywood;
+}
+
+#skills > div > h3:nth-child(5) {
+  color: darkgreen;
+}
+
+#skills > div > h3:nth-child(8) {
+  color: #333333;
+}
+
+#skills > div > h3:nth-child(11) {
+  color: blue;
+}
+
+#education > h3 {
+  color: darkgoldenrod;
+}
+
+.heartanimation {
+  padding-top: 2em;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/66955/web_heart_animation.png");
+  background-repeat: no-repeat;
+  background-size: 2900%;
+  background-position: left;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.animate {
+  animation: heart-burst 0.8s steps(28) forwards;
+}
+
+@keyframes heart-burst {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+#hobbies h3 {
+  color: beige;
+  font-family: monospace;
+}
+#hobbies p {
+  color: black;
+  font-style: italic;
+}
